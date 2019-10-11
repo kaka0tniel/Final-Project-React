@@ -1,4 +1,4 @@
-package com.finalproject;
+package id.travelead;
 
 import com.facebook.react.ReactActivity;
 

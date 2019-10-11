@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "111701146018",
+    "firebase_url": "https://travelead-7c22c.firebaseio.com",
+    "project_id": "travelead-7c22c",
+    "storage_bucket": "travelead-7c22c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111701146018:android:55510f7c19b6b04f721afb",
+        "android_client_info": {
+          "package_name": "id.travelead"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111701146018-09m91rkal1i5mfrejio2bsjt43ojonp4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoHbIn22KdkGYsRbdDosyrb1Oi79xfNgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111701146018-09m91rkal1i5mfrejio2bsjt43ojonp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
