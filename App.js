@@ -24,7 +24,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import Menu from './src/components/menu';
+import Route from './src/router/Routes';
 
-const App = () => <Menu/>;
+const App = () => <Route/>;
 
 export default App;

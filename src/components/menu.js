@@ -16,16 +16,10 @@ export default class Menu extends Component {
     super(props);
     this.state = {
       data: [
-        {id:1, title: "You",      color:"#FF4500", members:8,  image:"https://img.icons8.com/color/70/000000/name.png"},
-        {id:1, title: "Home",     color:"#87CEEB", members:6,  image:"https://img.icons8.com/office/70/000000/home-page.png"},
-        {id:2, title: "Love",     color:"#4682B4", members:12, image:"https://img.icons8.com/color/70/000000/two-hearts.png"} ,
-        {id:3, title: "Family",   color:"#6A5ACD", members:5,  image:"https://img.icons8.com/color/70/000000/family.png"} ,
-        {id:4, title: "Friends",  color:"#FF69B4", members:6,  image:"https://img.icons8.com/color/70/000000/groups.png"} ,
-        {id:5, title: "School",   color:"#00BFFF", members:7,  image:"https://img.icons8.com/color/70/000000/classroom.png"} ,
-        {id:6, title: "Things",   color:"#00FFFF", members:8,  image:"https://img.icons8.com/dusk/70/000000/checklist.png"} ,
-        {id:8, title: "World",    color:"#20B2AA", members:23, image:"https://img.icons8.com/dusk/70/000000/globe-earth.png"} ,
-        {id:9, title: "Remember", color:"#191970", members:45, image:"https://img.icons8.com/color/70/000000/to-do.png"} ,
-        {id:9, title: "Game",     color:"#008080", members:13, image:"https://img.icons8.com/color/70/000000/basketball.png"} ,
+        {id:1, title: "Administrator",      color:"#FF4500", screen:"HomeAdmin",  image:"https://img.icons8.com/color/70/000000/name.png"},
+        {id:2, title: "Hotels",     color:"#87CEEB", screen: "ListHotel",  image:"https://img.icons8.com/office/70/000000/home-page.png"},
+        {id:3, title: "Introduction",   color:"#00FFFF", screen:"About",  image:"https://img.icons8.com/dusk/70/000000/checklist.png"} ,
+        {id:4, title: "Setting", color:"#191970",screen:"Setting", image:"https://img.icons8.com/color/70/000000/to-do.png"} ,
       ]
     };
   }
@@ -47,14 +41,14 @@ export default class Menu extends Component {
           }}
           renderItem={({item}) => {
             return (
-              <TouchableOpacity style={[styles.card, {backgroundColor:item.color}]} onPress={() => {this.clickEventListener(item.view)}}>
+              <TouchableOpacity style={[styles.card, {backgroundColor:item.color}]} onPress={() => this.props.navigation.navigate(item.screen)}>
                 <View style={styles.cardHeader}>
                   <Text style={styles.title}>{item.title}</Text>
                   <Image style={styles.icon} source={{uri:"https://img.icons8.com/ios/40/000000/settings.png"}}/>
                 </View>
                 <Image style={styles.cardImage} source={{uri:item.image}}/>
                 <View style={styles.cardFooter}>
-                  <Text style={styles.subTitle}>{item.members} members</Text>
+                  
                 </View>
               </TouchableOpacity>
             )
